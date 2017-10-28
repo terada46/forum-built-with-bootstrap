@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title></title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/formmodal.js"></script>
+<style>
+
+</style>
+</head>
+<body>
+	<div id="wrap">
+		<div id="page-header">
+			<nav class="navbar navbar-default parent"> 
+				<div class="container-fluid top-nav">
+					<div class="nav-mobile">
+				        <a id="nav-toggle" href="#!"><span></span></a>
+				    </div>
+					<ul class="nav navbar-nav nav-list">
+						<li class="dropdown">
+							<a data-toggle="dropdown" class="dropdown-toggle" href="#!">
+								<span class="sr-only">Toggle Dropdown</span>
+								<i class="fa fa-bars" aria-hidden="true"></i> Quick links
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="#!">Topics to answer</a></li>
+								<li><a href="#!">Active topics</a></li>
+								<li><a href="#!">Search</a></li>
+								<li class="divider"></li>
+								<li><a href="#!"><i class="fa fa-users fa-fw" aria-hidden="true"></i>Our team</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#!"><i class="fa fa-question fa-fw" aria-hidden="true"></i>FAQ</a></li>
+						</li>
+					</ul>
+					<div class="collapse navbar-collapse pull-left">
+							<div class="input-group search-bar" role="search">
+								<input type="text" class="form-control" name="keywords" placeholder="Search...">
+								<span class="input-group-btn">
+									<button type="button" class="btn btn-default" role="button">
+										<i class="fa fa-search" aria-hidden="true"></i></button>
+									<button type="button" class="btn btn-default" role="button">
+										<i class="fa fa-cog" aria-hidden="true"></i></button>
+								</span>
+							</div>
+					</div>
+					<div id="login-menu" class="collapse navbar-collapse pull-left">
+						<ul class="nav navbar-nav">
+							<li class="dropdown">
+								<button type="button" class="btn btn-primary navbar-btn dropdown-toggle"
+									data-toggle="dropdown" role="button">
+									<span class="btn-label"><i class="fa fa-user" aria-hidden="true"></i></span>
+									<i class="fa fa-caret-down" aria-hidden="true"></i>
+								</button>
+								<ul class="dropdown-menu">
+									<li>
+										<form action="somefile.php" name="loginform" id="topnav-form">
+												<input type="text" placeholder="Username" name="username" id="topnav-username" size="10"
+													class="form-control" pattern="shadow" required autocomplete="off">
+												<input type="text" placeholder="Password" name="password" id="topnav-password" size="10"
+													class="form-control" title="Password" pattern="[A-z0-9](6,16)" required autocomplete="off">
+												<button type="submit" name="login" class="btn btn-primary btn-block">
+													<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>
+													Login</button>
+										</form>
+									<li><div class="divider"></div>
+									<li><button type="button" class="btn btn-primary btn-block" data-toggle="formmodal" data-target="#AddPopup">
+											<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+											Register</button></li>
+									
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<div class="container" id="page-body" role="main">
+			<div class="row">
+				<div class="col-md-12">
+				<a href="#!" class="btn btn-primary" data-toggle="tooltip" data-original-title="Home"
+					data-placement="top">
+					<span class="glyphicon glyphicon-home" aria-hidden="true"></span></a>
+				</div>		
+			</div>
+			<div class="row">	
+				<div class="col-md-6">
+					<div class="btn-group">
+						<button type="button" class="btn btn-default">New Topics</button>
+						<button type="button" class="btn btn-default">Hot Topics</button>
+					</div>
+				</div>
+			</div>
+
+			<!-- first table -->
+			<div class="panel panel-default table-responsive">
+				<div class="panel-body" id="first-panel">
+					<h2>Learn English</h2>
+					<p>Welcome to the English forum, the official Learn English Online forum. 
+						For anyone who is learning or wants to learn ESL / EFL English online.
+					</p>
+					<table class="table table-hover" role="list">
+						<thead id="first-table-thead">
+							<tr>
+								<th>Most Recent Posts</th>
+								<th class="hidden-xs">Replies</th>
+								<th class="hidden-xs">Views</th>
+								<th class="hidden-xs">Last Post</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><a href="#!">host of those live streaming channel</a></td>
+								<td class="hidden-xs" id="screenwidthinput">23</td>
+								<td class="hidden-xs">34</td>
+								<td class="hidden-xs">
+									<P>Hwacha</p>
+									18.09.2017, 21:02</td>
+							</tr>
+							<tr>
+								<td><a href="#!">are both "of" grammatically correct in "capable of X and also of Y"</a></td>
+								<td class="hidden-xs">2</td>
+								<td class="hidden-xs">79</td>
+								<td class="hidden-xs"><p>Gattamelata</p>
+									18.09.2017, 18:31</td>
+							</tr>
+							<tr>
+								<td><a href="#!">"last to arrive" vs "arrive last"</a></td>
+								<td class="hidden-xs">0</td>
+								<td class="hidden-xs">42</td>
+								<td class="hidden-xs"><p>lingobingo</p>
+									18.09.2017, 18:06</td>
+							</tr>
+							<tr>
+								<td><a href="#!">It took issue with the lack of</td>
+								<td class="hidden-xs">0</td>
+								<td class="hidden-xs">42</td>
+								<td class="hidden-xs"><p>Irelia20150604</p>
+									18.09.2017, 17:25</td>
+							</tr>
+						</tbody>
+					</table>
+
+				</div>
+			</div>
+
+			<!-- second table -->
+			<div class="panel panel-default table-responsive forum-table">
+				<div class="panel-body">
+					<table class="table table-bordered table-striped table-hover">
+						<thead>
+							<tr>
+								<th class="forum-name"><i class="fa fa-sitemap fa-fw" aria-hidden="true"></i>Forum</th>
+								<th class="hidden-xs"><i class="fa fa-comments fa-fw" aria-hidden="true"></i>Topics</th>
+								<th class="hidden-xs"><i class="fa fa-pencil fa-fw" aria-hidden="true"></i>Posts</th>
+								<th class="hidden-xs"><i class="fa fa-history fa-fw" aria-hidden="true"></i>Last post</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="forum-name">
+									<span class="pull-left forum-icon">
+										<a href="#!" class="btn btn-lg btn-default" data-toggle="tooltip" 
+										data-original-title="Check the posts" data-placement="top">					
+											<i class="fa fa-folder" aria-hidden="true"></i>
+										</a>
+									</span>
+									<div class="forum-desc">
+										<a href="#!"  data-toggle="tooltip" 
+										data-original-title="Read top news here before start" data-placement="right">News & Announcements</a>
+										<p>Check out all the forum updates and general announcements here</p>
+									</div>
+								</td>
+								<td class="hidden-xs"><h4><span class="label label-info">40</span></h4></td>
+								<td class="hidden-xs"><h4><span class="label label-info">772</span></h4></td>
+								<td class="hidden-xs"><p class="text-primary"><a href="#!"><b>Re: Your suggestions to make … </b></a></p>
+									<p>by <span class="text-primary"><a href="#!">Ni Oxx</a></span></p>
+									<span>28.09.2016, 03:41</span>
+								</td>
+							</tr>
+							<tr>
+								<td class="forum-name">
+									<span class="pull-left forum-icon">
+										<a href="#!" class="btn btn-lg btn-default" data-toggle="tooltip" 
+										data-original-title="Check the posts" data-placement="top">	
+											<i class="fa fa-folder" aria-hidden="true"></i>
+										</a>
+									</span>
+									<div class="forum-desc">
+										<a href="#!"  data-toggle="tooltip" 
+										data-original-title="Some ways to figure out" data-placement="right">Troubleshooting & Help</a>
+										<p>Technical support, site inquiries, and forum questions</p>
+									</div>
+								</td>
+								<td class="hidden-xs"><h4><span class="label label-info">119</span></h4></td>
+								<td class="hidden-xs"><h4><span class="label label-info">1149</span></h4></td>
+								<td class="hidden-xs"><p class="text-primary"><a href="#!"><b>Re: How can I send private me… </b></a></p>
+									<p>by <span class="text-primary"><a href="#!">GGib</a></span></p>
+									<span>16.07.2017, 18:07</span>
+								</td>
+							</tr>
+							<tr>
+								<td class="forum-name">
+									<span class="pull-left forum-icon">
+										<a href="#!" class="btn btn-lg btn-default" data-toggle="tooltip" 
+										data-original-title="Check the posts" data-placement="top">	
+											<i class="fa fa-folder" aria-hidden="true"></i>
+										</a>
+									</span>
+									<div class="forum-desc">
+										<a href="#!" data-toggle="tooltip" 
+										data-original-title="Try to find some answers here" data-placement="right">Introduction</a>
+										<p>Come introduce yourself and feel at home!</p>
+									</div>
+								</td>
+								<td class="hidden-xs"><h4><span class="label label-info">257</span></h4></td>
+								<td class="hidden-xs"><h4><span class="label label-info">1298</span></h4></td>
+								<td class="hidden-xs"><p class="text-primary"><a href="#!"><b>Re: Hello from Singapore </b></a></p>
+									<p>by <span class="text-primary"><a href="#!">Hamaguri</a></span></p>
+									<span>18.09.2017, 13:38</span>
+								</td>
+							</tr>
+							<tr>
+								<td class="forum-name">
+									<span class="pull-left forum-icon">
+										<a href="#!" class="btn btn-lg btn-default" data-toggle="tooltip" 
+										data-original-title="Check the posts" data-placement="top">	
+											<i class="fa fa-folder" aria-hidden="true"></i>
+										</a>
+									</span>
+									<div class="forum-desc">
+										<a href="#!" data-toggle="tooltip" 
+										data-original-title="Discuss everything you want" data-placement="right">General Discussion</a>
+										<p>Discuss everything Gaki no Tsukai here.</p>
+									</div>
+								</td>
+								<td class="hidden-xs"><h4><span class="label label-info">254</span></h4></td>
+								<td class="hidden-xs"><h4><span class="label label-info">4883</span></h4></td>
+								<td class="hidden-xs"><p class="text-primary"><a href="#!"><b>Re: Pay and Television Appear… </a></b></p>
+									<p>by <span class="text-primary"><a href="#!">conjyak</a></span></p>
+									<span>18.09.2017, 18:31</span>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+			<!-- third table -->
+			<div class="panel panel-default table-responsive forum-table">
+				<div class="panel-body">
+					<table class="table table-bordered table-striped table-hover">
+						<thead>
+							<tr>
+								<th class="forum-name"><i class="fa fa-sitemap fa-fw" aria-hidden="true"></i> Other Languages</th>
+								<th class="hidden-xs"><i class="fa fa-comments fa-fw" aria-hidden="true"></i>Topics</th>
+								<th class="hidden-xs"><i class="fa fa-pencil fa-fw" aria-hidden="true"></i>Posts</th>
+								<th class="hidden-xs"><i class="fa fa-history fa-fw" aria-hidden="true"></i>Last post</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td  class="forum-name">
+									<span class="pull-left forum-icon">
+										<a href="#!" class="btn btn-lg btn-default" data-toggle="tooltip" 
+										data-original-title="Check the posts" data-placement="top">					
+											<i class="fa fa-folder" aria-hidden="true"></i>
+										</a>
+									</span>
+									<div class="forum-desc">
+										<a href="#!" data-toggle="tooltip" 
+										data-original-title="Vocabulaire Français-Anglais" data-placement="right">French-English Vocabulary</a>
+										<p>French and English words, phrases and idioms: meaning, translation, usage.</p>
+									</div>
+								</td>
+								<td class="hidden-xs"><h4><span class="label label-info">40</span></h4></td>
+								<td class="hidden-xs"><h4><span class="label label-info">772</span></h4></td>
+								<td class="hidden-xs"><p class="text-primary"><a href="#!"><b>Re: Your suggestions to make … </b></a></p>
+									<p>by <span class="text-primary"><a href="#!">Ni Oxx</a></span></p>
+									<span>28.09.2016, 03:41</span>
+								</td>
+							</tr>
+							<tr>
+								<td  class="forum-name">
+									<span class="pull-left forum-icon">
+										<a href="#!" class="btn btn-lg btn-default" data-toggle="tooltip" 
+										data-original-title="Check the posts" data-placement="top">	
+											<i class="fa fa-folder" aria-hidden="true"></i>
+										</a>
+									</span>
+									<div class="forum-desc">
+										<a href="#!" data-toggle="tooltip" 
+										data-original-title="Grammaire française et anglaise" data-placement="right">French and English Grammar</a>
+										<p>Verb tenses, conjugation, agreement, prepositions, articles, pronouns, etc., in English and in French.</p>
+									</div>
+								</td>
+								<td class="hidden-xs"><h4><span class="label label-info">119</span></h4></td>
+								<td class="hidden-xs"><h4><span class="label label-info">1149</span></h4></td>
+								<td class="hidden-xs"><p class="text-primary"><a href="#!"><b>Re: How can I send private me… </b></a></p>
+									<p>by <span class="text-primary"><a href="#!">GGib</a></span></p>
+									<span>16.07.2017, 18:07</span>
+								</td>
+							</tr>
+							<tr>
+								<td class="forum-name">
+									<span class="pull-left forum-icon">
+										<a href="#!" class="btn btn-lg btn-default" data-toggle="tooltip" 
+										data-original-title="Check the posts" data-placement="top">	
+											<i class="fa fa-folder" aria-hidden="true"></i>
+										</a>
+									</span>
+									<div class="forum-desc">
+										<a href="#!"  data-toggle="tooltip" 
+										data-original-title="Hindi, Urdu, Persian, Punjabi, Afghan Persian/Dari, etc." data-placement="right">Indo-Iranian Languages</a>
+										<p>he scope of this forum are all the contemporary members of the IIR family.he scope of this forum are all the contemporary members of the IIR family.</p>
+									</div>
+								</td>
+								<td class="hidden-xs"><h4><span class="label label-info">257</span></h4></td>
+								<td class="hidden-xs"><h4><span class="label label-info">1298</span></h4></td>
+								<td class="hidden-xs"><p class="text-primary"><a href="#!"><b>Re: Hello from Singapore </b></a></p>
+									<p>by <span class="text-primary"><a href="#!">Hamaguri</a></span></p>
+									<span>18.09.2017, 13:38</span>
+								</td>
+							</tr>
+							<tr>
+								<td class="forum-name">
+									<span class="pull-left forum-icon">
+										<a href="#!" class="btn btn-lg btn-default" data-toggle="tooltip" 
+										data-original-title="Check the posts" data-placement="top">	
+											<i class="fa fa-folder" aria-hidden="true"></i>
+										</a>
+									</span>
+									<div class="forum-desc">
+										<a href="#!" data-toggle="tooltip" title="Discuss anything you like!" data-placement="right">General Discussion</a>
+										<p>Discuss everything Gaki no Tsukai here.</p>
+									</div>
+								</td>
+								<td class="hidden-xs"><h4><span class="label label-info">254</span></h4></td>
+								<td class="hidden-xs"><h4><span class="label label-info">4883</span></h4></td>
+								<td class="hidden-xs"><p class="text-primary"><a href="#!"><b>Re: Pay and Television Appear… </b></a></p>
+									<p>by <span class="text-primary"><a href="#!">conjyak</a></span></p>
+									<span>18.09.2017, 18:31</span>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+			<!-- forth table -->
+			<div class="panel panel-default table-responsive forum-table">
+				<div class="panel-body">
+					<table class="table table-bordered table-striped table-hover">
+						<thead>
+							<tr>
+								<th class="forum-name"><i class="fa fa-sitemap fa-fw" aria-hidden="true"></i> Other Languages</th>
+								<th class="hidden-xs"><i class="fa fa-comments fa-fw" aria-hidden="true"></i>Topics</th>
+								<th class="hidden-xs"><i class="fa fa-pencil fa-fw" aria-hidden="true"></i>Posts</th>
+								<th class="hidden-xs"><i class="fa fa-history fa-fw" aria-hidden="true"></i>Last post</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td  class="forum-name">
+									<span class="pull-left forum-icon">
+										<a href="#!" class="btn btn-lg btn-default" data-toggle="tooltip" 
+										data-original-title="Check the posts" data-placement="top">					
+											<i class="fa fa-folder" aria-hidden="true"></i>
+										</a>
+									</span>
+									<div class="forum-desc">
+										<a href="#!" data-toggle="tooltip" 
+										data-original-title="اArabic, Hevrew" data-placement="right">Semitic Languages</a>
+										<p>Questions about Arabic, or translations between Arabic and any other language.</p>
+									</div>
+								</td>
+								<td class="hidden-xs"><h4><span class="label label-info">135</span></h4></td>
+								<td class="hidden-xs"><h4><span class="label label-info">6534</span></h4></td>
+								<td class="hidden-xs"><p class="text-primary"><a href="#!"><b>Re: No-Laughing: Prison (2014… </b></a></p>
+									<p>by <span class="text-primary"><a href="#!">striderstone</a></span></p>
+									<span>10.08.2017, 07:20</span>
+								</td>
+							</tr>
+							<tr>
+								<td class="forum-name">
+									<span class="pull-left forum-icon">
+										<a href="#!" class="btn btn-lg btn-default" data-toggle="tooltip" 
+										data-original-title="Check the posts" data-placement="top">	
+											<i class="fa fa-folder" aria-hidden="true"></i>
+										</a>
+									</span>
+									<div class="forum-desc">
+										<a href="#!" data-toggle="tooltip" 
+										data-original-title="mainly from East Asia" data-placement="right">Asian languages</a>
+										<p>Questions about Indo languages, Turkish, Chinese, Japanese and Korean.</p>
+									</div>
+									<div class="forum-desc">
+										Subforums: <a href="#!">Indo-Iranian Languages</a>, <a href="#!">Tagalog and Filipino</a>, <a href="#!">Türkçe (Turkish)</a>, <a href="#!">Ελληνικά (Greek)</a>, <a href="#!">中文+方言 (Chinese)</a> <a href="#!">日本語 (Japanese)</a>, <a href="#!">한국어 (Korean)</a>
+									</div>
+								</td>
+								<td class="hidden-xs"><h4><span class="label label-info">1456</span></h4></td>
+								<td class="hidden-xs"><h4><span class="label label-info">11958</span></h4></td>
+								<td class="hidden-xs"><p class="text-primary"><a href="#!"><b>Re: How can I send private me… </b></a></p>
+									<p>by <span class="text-primary"><a href="#!">GGib</a></span></p>
+									<span>16.07.2017, 18:07</span>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+			<!-- first panel -->
+			<div class="panel panel-default login-panel">
+				<div class="panel-heading">
+					<i class="fa fa-user fa-fw"></i> Login
+				</div>
+				<div class="panel-body">
+					<div class="pull-left clearfix">
+						<div class="input-group pull-left bottom-login">
+							<form action="somefile.php" name="loginform" id="bottom-form">
+								<input type="text" class="form-control" placeholder="Username" name="username" id="bottom-username"
+									size="10"  pattern="shadow" required autocomplete="off">
+								<input type="text" class="form-control" placeholder="Password" name="password" id="bottom-password"
+									size="10">
+								<span class="input-group-btn">
+									<button type="submit" class="btn btn-primary" role="button">Login</button>
+								</span>
+							</form>
+						</div> 
+						<div class="checkbox custom pull-left">
+							<a href="#!">Forgot my password</a> |
+							<label>Remember me <input type="checkbox" name="remember" value="1"> </label>
+						</div>
+						
+					</div>
+					<div class="pull-left register">
+							<button type="button" class="btn btn-primary bottom-register" data-toggle="formmodal" data-target="#AddPopup" role="button">
+								<span class="btn-label"><i class="fa fa-user" aria-hidden="true"></i></span>Register
+							</button>
+					</div>
+				</div>
+			</div>
+
+			<!-- second panel -->
+			<div class="panel panel-default online-panel">
+				<div class="panel-heading">
+					<i class="fa fa-globe fa-fw"></i> Statistic
+				</div>
+				<div class="panel-body">
+					<p>In total there are 505 users online :: 27 registered, 6 hidden and 472 guests (based on users active over the past 30 minutes)<br>Most users ever online was 1241 on 13.06.2012, 07:37</p>
+					<div class="divider"></div>
+					<p>Registered users: Alexa [Bot], <a href="#!"><span class="text-primary">aokakesu</span></a>, <a href="#!"><span class="text-primary">awsede</span></a>, <a href="#!"><span class="text-primary">Ayaka</span></a>, Baidu [Spider], <a href="#!"><span class="text-primary">betelgeuse</span></a>, Bing [Bot], <a href="#!"><span class="text-primary">Dark_M_clowN</span></a>, <a href="#!"><span class="text-primary">ErnieIsMyGod</span></a></p>
+				</div>
+			</div>
+
+			<!-- third panel -->
+			<div class="panel panel-default online-panel">
+				<div class="panel-heading">
+					<i class="fa fa-bar-chart fa-fw"></i> Who is online
+				</div>
+				<div class="panel-body">
+					<p>Total posts <b>125628</b> • Total topics <b>5623</b> • Total members <b>41969</b> • Welcome our newest member: <a href="#!"><span class="text-primary"><b>Michael_kevin</b></span></a></p>
+					<div class="divider"></div>
+					<p>Current time: <span id="time-text"></span></p>
+				</div>
+			</div>
+
+		</div>
+		<div class="container" id="page-footer">
+			<div class="row">
+				<div class="col-md-2 pull-right">
+						<div class="btn-group dropup pull-right">
+						<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#!" aria-haspopup="true" aria-expanded="false">
+							<span class="sr-only">Toggle Dropdown</span>
+							<i class="fa fa-wrench fa-fw" aria-hidden="true"></i><span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu">
+							<li><a href="#!">Help these posts</a></li>
+							<li><a href="#!">Active posts</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="copyright text-center" role="contentinfo">
+				Powered by Deng Xiaodong @Akito
+			</div>
+			<button type="button" id="to-top" href="#!" class="btn btn-primary" role="button" data-toggle="tooltip" data-container="body" data-placement="left" title="Back to Top" style="display:none;"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
+			<div class="navbar navbar-default navbar-fixed-bottom">
+				<div class="container-fluid">
+					<ul id="nav_bottom" class="nav navbar-nav">
+						<li><a href="#!"><i class="fa fa-home fa-fw" aria-hidden="true"></i></a></li>
+						<li><a href="#!"><i class="fa fa-group fa-fw" aria-hidden="true"></i>Our Team</a></li>
+						<li><a href="#!"><i class="fa fa-trash fa-fw" aria-hidden="true"></i>Delete all board cookies</a></li>
+						<li class="hidden-xs"><p class="navbar-text">All times are <abbr title="Coordinated Universal Time">UTC</abbr></p></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right hidden-xs">
+						<li><p class="navbar-text">Design by Florian Gareis</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- motal signup form -->
+	<div class="modal fade" id="AddPopup" data-cache-form="true">
+		<div class="modal-dialog">
+			<div class="modal-content signup-form col-md-9 col-md-offset-3 col-sm-9 col-sm-offset-2">
+				<div class="panel">
+					<div class="panel-heading">
+						<div class="panel-title">Sign Up</div>
+						<div style="float:right; font-size:85%; position: relative; top:-10px"><a id="signinlink" href="#!" onclick="$('#signupbox').hide(); $('#loginbox').show()">Sign In</a></div>
+					</div>
+					<div class="panel-body" id="form-panel">
+						<form id="signupform" class="form-horizontal" role="form">
+							<div id="signupalert" style="display:none" class="alert alert-danger">
+								<p>Error: </p>
+								<span></span>
+							</div>
+							<div class="form-group">
+								<label for="email" class="col-md-3 control-label">Email</label>
+								<div class="col-md-9">
+									<input type="text" class="form-control" name="email" placeholder="Email Address">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="firstname" class="col-md-3 control-label">First Name</label>
+								<div class="col-md-9">
+									<input type="text" class="form-control" name="firstname" placeholder="First Name">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="lasttname" class="col-md-3 control-label">Last Name</label>
+								<div class="col-md-9">
+									<input type="text" class="form-control" name="lastname" placeholder="Last Name">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="password" class="col-md-3 control-label">Password</label>
+								<div class="col-md-9">
+									<input type="text" class="form-control" name="passwd" placeholder="Password">
+								</div>
+							</div>
+							<div class="form-group">
+								<!-- Button -->
+								<div class="col-md-offset-3 col-md-9">
+									<button id="btn-signup" type="button" class="btn btn-info">
+										<i class="fa fa-hand-o-right" aria-hidden="true"></i> Sign up</button>
+									<span style="margin-left:8px">or</span>
+								</div>
+							</div>
+							<div style="border-top: 1px solid #999; padding-top:20px" class="form-group">
+								<div class="col-md-offset-1 col-md-11">
+									<button id="btn-twsignup" type="button" class="btn btn-twi custom"><i class="fa fa-twitter" aria-hidden="true"></i> Sign up with twitter</button>
+									<button id="btn-fbsignup" type="button" class="btn btn-primary custom"><i class="fa fa-facebook" aria-hidden="true"></i> Sign up with facebook</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="js/script.js"></script>
+</html>
